@@ -1,0 +1,19 @@
+.fondo {
+    background-image: url(media/ba1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a {
+    color: #000000; 
+    text-decoration: dotted;
+  }
+  .btn-personalizado {
+    background-color: #52da52;
+    border-color: #52da52;
+    color: aliceblue;
+    border-radius:10px;
+  }
+  .navbar{
+    background: linear-gradient(to left, rgb(15, 30, 56), rgb(1, 14, 58))
+  }
