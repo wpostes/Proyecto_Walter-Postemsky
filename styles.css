@@ -14,6 +14,6 @@ a {
     color: aliceblue;
     border-radius:10px;
   }
-  .navbar{
+ #barra_abajo{
     background: linear-gradient(to left, rgb(15, 30, 56), rgb(1, 14, 58))
   }

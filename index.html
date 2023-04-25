@@ -18,7 +18,7 @@
 <body>
 <header>
   <!--navbar-->
-  <nav class="navbar navbar-expand-md  navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-md  navbar-dark bg-dark fixed-top">
     <div class="container pl-5 pr-5">
       <a class="navbar-brand" href="#">
         <img src="media/codoacodo.png" width="70" height="60" class="d-inline-block align-center" alt="codo a codo">
@@ -82,11 +82,11 @@
     <div class="row g-3">
       <div class="col-12 col-md-4">
 
-        <img src="media/steve.jpg" class="card-img-top img-card" alt="...">
+        <img src="media/steve.jpg" class="card-img-top img-card" alt="Steve Jobs">
 
         <div class="card-body mt-3">
-          <button type="button" class="btn btn-warning fw-semibold">JavaScript</button>
-          <button type="button" class="btn btn-secondary">React</button>
+          <span class="badge text-bg-warning">JavaScript</span>
+          <span class="badge text-bg-info">React</span>
           <h5 class="card-title">Steve Jobs</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora maiores numquam ipsum
             dolorum, ea quasi obcaecati doloremque officia earum sit nam, iste ex natus dicta dolores deleniti, labore
@@ -96,10 +96,10 @@
       </div>
       <div class="col-12 col-md-4">
 
-        <img src="media/bill.jpg" class="card-img-top img-card" alt="...">
+        <img src="media/bill.jpg" class="card-img-top img-card" alt="Bill Gates">
         <div class="card-body mt-3">
-          <button type="button" class="btn btn-warning fw-semibold">JavaScript</button>
-          <button type="button" class="btn btn-secondary">React</button>
+          <span class="badge text-bg-warning">JavaScript</span>
+          <span class="badge text-bg-info">React</span>
           <h5 class="card-title">Bill Gates</h5>
           <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ex officiis amet
             quibusdam, exercitationem necessitatibus odit impedit porro? Dolores ut ad aspernatur quis, ex tenetur iure
@@ -109,10 +109,10 @@
       </div>
       <div class="col-12 col-md-4">
 
-        <img src="media/ada.jpeg" class="card-img-top img-card" alt="...">
+        <img src="media/ada.jpeg" class="card-img-top img-card" alt="AdaLovence">
         <div class="card-body mt-3">
-          <button type="button" class="btn btn-secondary">Negocios</button>
-          <button type="button" class="btn btn-danger">Startups</button>
+          <span class="badge text-bg-secondary">Negocios</span>
+          <span class="badge text-bg-danger">Startups</span>
           <h5 class="card-title">Ada Lovelace</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi dolores,
             commodi facere aliquid eius expedita blanditiis veritatis vero voluptate eligendi excepturi maxime quidem
@@ -172,32 +172,32 @@
   </div>
 </main>
 <!--pie de pagina-->
-  <footer class="navbar pb-3 pt-3">
+  <footer class="navbar pb-3 pt-3"id=barra_abajo>
     <div class="container-fluid justify-content-center">
-      <div class="row text-white fw-lighter fs-6 text-wrap text-center">
-        <div class="col-auto"></div>
-        <div class=" col-auto  ">
+      <div class="row text-white fw-lighter fs-6  text-center">
+        <div class="col-md-auto col-sm-3"></div>
+        <div class=" col-md-auto col-sm-6  ">
           <a class="nav-link" href="#">Preguntas frecuentes</a>
         </div>
-        <div class=" col-auto">
+        <div class=" col-md-auto col-sm-6">
           <a class="nav-link" href="#">Contáctanos</a>
         </div>
-        <div class="  col-1">
+        <div class="  col-md-auto col-sm-6">
           <a class="nav-link" href="#">Prensa</a>
         </div>
-        <div class=" text-center col-2">
+        <div class="col-md-auto col-sm-6">
           <a class="nav-link" href="#">Conferencias</a>
         </div>
-        <div class="col-auto ">
+        <div class="col-md-auto col-sm-6 ">
           <a class="nav-link" href="#">Terminos y condiciones</a>
         </div>
-        <div class="col-auto">
+        <div class="col-md-auto col-sm-6">
           <a class="nav-link" href="#">Privacidad</a>
         </div>
-        <div class=" col-1">
+        <div class=" col-md-auto col-sm-6 text-center">
           <a class="nav-link" href="#">Estudiantes</a>
         </div>
-        <div class="col-2"></div>
+        <div class="col-md-auto col-sm-3"></div>
       </div>
     </div>
   </footer>
