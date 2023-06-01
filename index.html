@@ -28,19 +28,19 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav mb-0 mb-lg-0 justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+              <a class="nav-link active" aria-current="page" href="#carrousel">La conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Los oradores</a>
+              <a class="nav-link" href="#conoceAOradores">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">El lugar y la fecha</a>
+              <a class="nav-link" href="#LugarYFecha">El lugar y la fecha</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#convierteteEnOrador">Conviertete en orador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-success" href="#">Comprar tickets</a>
+              <a class="nav-link text-success" href="#ticket">Comprar tickets</a>
             </li>
           </ul>
         </div>
@@ -144,7 +144,7 @@
     </section>
   </header>
   <main>
-    <section class="mt-0 p-5 cards">
+    <section id="conoceAOradores" class="mt-1 p-5 cards">
       <div class="text-center fw-light fs-6">CONOCE A LOS</div>
       <p class="text-center fw-semibold fs-3 m-0">ORADORES</p>
       <div class="row g-3">
@@ -193,9 +193,10 @@
         </div>
       </div>
     </section>
-    <div class="container-fluid">
+    <section id="LugarYFecha">
+    <div class="container-fluid bt-5">
       <div class="row">
-        <div class="col-md-6 p-0">
+        <div class="col-md-6 p-0 ">
           <img src="media/honolulu.jpg" alt="Imagen de la sección" class="w-100 h-100" />
         </div>
         <div class="col-md-6 bg-dark text-light p-5">
@@ -215,8 +216,43 @@
         </div>
       </div>
     </div>
-   
+  </section>
     <section id="convierteteEnOrador">
+    <div class="container">
+      <div class="text-center fw-light fs-6">CONVIÉRTETE EN UN</div>
+      <p class="text-center fw-semibold fs-3 mt-0 mb-0">ORADOR</p>
+      <p class="text-center fw-lighter fs-6 mt-0 mb-0">
+        Anótate como orador para dar una <a href="">charla ignite</a>.
+        Cuéntanos de que quieres hablar!
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="row">
+              <div class="form-group col-6">
+                <label for="nombre"></label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" />
+              </div>
+              <div class="form-group col-6">
+                <label for="apellido"></label>
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sobre-que"></label>
+              <textarea class="form-control" id="sobre-que" name="sobre-que" rows="3"
+                placeholder="Ingresa aquí de qué quieres hablar"></textarea>
+              <small class="form-text text-muted">Recuerda incluir un titulo para tu charla.</small>
+            </div>
+            <button type="submit" class="col-12 btn btn-personalizado mb-2 mt-2">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="ticket">
       <div class="container p-5">
         <div class="row">
           <div class="col-md-4">
@@ -298,22 +334,25 @@
               </div>
   
           </div>
-          <div class="row mt-3">
+          <div class="row m-1 pt-2">
             <div class="col-md-2"  ></div>
-            <div class="col-md-8" class="fw-bold d-flex align-items-center" id="resu">
-              <p id="etiqueta-total" class="fw-bold d-flex align-items-center">Total a abonar: <span id="resultado"></span> </p>
-              
+            <div class="col-md-8" id="resu">
+               <div class="row">
+                <div class="mt-3">
+              <p id="etiqueta-total" class="fw-lighter d-flex align-items-center">Total a abonar: <span id="resultado"></span> </p>
+              </div>
+            </div>
             </div>
           </div>
           </div>
   
-          <div class="row ">
+          <div class="row">
             <div class="col-md-3"  ></div>
-            <div class="col-md-3 p-2">
+            <div class="col-md-3 ">
                 
                   <button type="reset" id="borrar" class="btn btn-success w-100 " style="background-color:rgb(107, 208, 7) ; border-color: rgb(84, 161, 7);">Borrar</button>
               </div>
-              <div class="col-md-3 p-2">
+              <div class="col-md-3 pb-5">
                
                   <button type="submit" id="resumen" class="btn btn-success w-100" style="background-color:rgb(107, 208, 7) ; border-color: rgb(84, 161, 7);">Resultado</button>
               </div>
